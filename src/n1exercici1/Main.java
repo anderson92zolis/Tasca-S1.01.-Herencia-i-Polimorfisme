@@ -8,9 +8,7 @@ public class Main {
 	// create a objects of a subclasses
 		
 	InstrumentosMusicales instrumentDeVent = new InstrumentDeVent("Fagot1",1800);
-		
 	InstrumentosMusicales instrumentDePercussio = new InstrumentDePercussio("Tubo Sonoro1",1500);
-	
 	InstrumentosMusicales instrumentDeCorda= new InstrumentDeCorda("Guitarra1",1000);
 	
 	System.out.println(instrumentDeVent.toString());
@@ -21,14 +19,19 @@ public class Main {
 	instrumentDePercussio.tocar();
 	instrumentDeCorda.tocar();
 	
+	//  getNom() methods from a InstrumentosMusicales to know the name of a object
+	
+	System.out.println(instrumentDeVent.getNom());
+	System.out.println(instrumentDePercussio.getNom());
+	System.out.println(instrumentDeCorda.getNom());
+	
 	// call the static attributes of the subclass
 	
 	System.out.println(InstrumentDeVent.nomStatic);
 	System.out.println(InstrumentDePercussio.nomStatic);
 	System.out.println(InstrumentDeCorda.nomStatic);
 	
+	
+	
 	}
 }
-
-// preguntar dónde es el atributo statico? en la superclase o las hijas
-// aqui se modifican desde el objeto creado como la clase.

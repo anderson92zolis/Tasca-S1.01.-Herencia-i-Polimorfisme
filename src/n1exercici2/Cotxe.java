@@ -10,7 +10,7 @@ public class Cotxe  {// Create a Edificio class
 	
 	public Cotxe(String model,int potencia) {
 		// Set the initial value for the class attribute 
-		this.model=model;
+		Cotxe.model=model;
 		this.potencia=potencia;
 	}
 	
