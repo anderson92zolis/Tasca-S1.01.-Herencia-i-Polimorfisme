@@ -1,25 +1,17 @@
 package n1exercici2;
 
-public class Cotxe  {// Create a Edificio class
+public class Cotxe  {// Create a Cotxe class
 	
-	final static String Marca = "default";  //creamos constantes para no creaer espacios de memorias para almacenar
-	private static String model; 				//  todos los objetos de la clase que instanciamos tendrán el mismo atributo y si modificamos los objetos tendán el mismo atributo
-	private final int potencia; 			// una vez instanciado no se podra modificar el valor del atributo
+	final static String Marca = "default";  
+	private static String model; 			
+	private final int potencia; 			
 	
-	// Create a class constructor for the Cotxe class
+	// Create the constructor for the Cotxe class
 	
-	public Cotxe(String model,int potencia) {
-		// Set the initial value for the class attribute 
+	public Cotxe(String model,int potencia) { 
 		Cotxe.model=model;
 		this.potencia=potencia;
 	}
-	
-	/*public Cotxe(final String marca,int model,int potencia) {
-	
-	this.marca = marca; // Set the initial value for the class attribute 
-	this.model=model;
-	this.potencia=potencia;
-	}*/
 	
 	// setter& getters
 	
@@ -36,7 +28,7 @@ public class Cotxe  {// Create a Edificio class
 	}
 	
 	public static void setModel(String model) {
-		Cotxe.model = model; 	// cuando los atributos de clase son estáticos se debe acceder por la clase
+		Cotxe.model = model; 	
 	}
 		// Methods
 	
