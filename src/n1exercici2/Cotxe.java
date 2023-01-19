@@ -2,7 +2,7 @@ package n1exercici2;
 
 public class Cotxe  {// Create a Cotxe class
 	
-	final static String Marca = "default";  
+	public final static String Marca = "default";  
 	private static String model; 			
 	private final int potencia; 			
 	

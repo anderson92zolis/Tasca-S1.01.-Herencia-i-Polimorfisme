@@ -1,8 +1,8 @@
 package n2exercici1;
 
 public class Telefon {
-	private final String marca;
-	private final String model;
+	private String marca;
+	private String model;
 	
 	 // Create a class constructor for the Telefon class
 	public Telefon(String marca,String model) {
