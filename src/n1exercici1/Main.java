@@ -25,13 +25,11 @@ public class Main {
 	System.out.println(instrumentDePercussio.getNom());
 	System.out.println(instrumentDeCorda.getNom());
 	
-	// call the static attributes of the subclass
+	// call the static attributes of the subclass(to access at "private static String nomStatic" we must use a get(static way because is private) or make the class static)
 	
-	System.out.println(InstrumentDeVent.nomStatic);
-	System.out.println(InstrumentDePercussio.nomStatic);
-	System.out.println(InstrumentDeCorda.nomStatic);
-	
-	
+	System.out.println(InstrumentDeVent.getNomStatic()); // This is because the static attribute are Private and we need use getter to access
+	System.out.println(InstrumentDeCorda.getNomStatic());
+	System.out.println(InstrumentDePercussio.getNomStatic());
 	
 	}
 }

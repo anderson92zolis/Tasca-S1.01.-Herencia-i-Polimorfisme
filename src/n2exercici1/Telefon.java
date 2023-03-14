@@ -5,6 +5,7 @@ public class Telefon {
 	private String model;
 	
 	 // Create a class constructor for the Telefon class
+	
 	public Telefon(String marca,String model) {
 	this.marca=marca;
 	this.model=model;

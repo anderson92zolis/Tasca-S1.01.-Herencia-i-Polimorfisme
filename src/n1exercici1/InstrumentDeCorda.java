@@ -2,11 +2,21 @@ package n1exercici1;
 
 public class InstrumentDeCorda extends InstrumentosMusicales {
 	
-	public static String nomStatic= "guitarra";
+	private static String nomStatic= "guitarra";
 	
 	public InstrumentDeCorda(String nom, int preu) {
 		super(nom, preu);
 		}
+	
+	//getter static way
+	
+		/**
+		 * @return the nomStatic
+		 */
+	
+	public static String getNomStatic() {
+		return nomStatic;
+	}
 	
 	// methods
 	public void tocar() {
